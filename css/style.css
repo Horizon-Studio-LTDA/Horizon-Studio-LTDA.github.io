@@ -118,7 +118,7 @@ header {
 .hamburger span {
 	width: 25px;
 	height: 3px;
-	background-color: var(--dark-div);
+	background-color: white;
 	margin: 3px 0;
 	transition: 0.3s;
 }
@@ -707,6 +707,10 @@ footer {
         padding: 2rem 0;
         gap: 1.5rem;
     }
+
+	.nav-menu a {
+		color: var(--paragraph);
+	}
 
     .nav-menu.active {
         left: 0;

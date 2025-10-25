@@ -98,13 +98,13 @@ document.addEventListener('DOMContentLoaded', function () {
             name: "Heverton Bezerra",
             position: "Sócio-Fundador"
         },
-        3: {
+        2: {
             logo: "/assets/images/preceasy-logo.svg",
             text: "Desde o primeiro momento, percebi que Horizon seria a parceira ideal para o projeto, a equipe conseguiu captar de maneira integral todos os pontos para o desenvolvimento dessa solução, demonstrando uma disponibilidade e dedicação com entregas das demandas, buscaram entender de fato sobre nossos clientes, trazendo aplicações humanizadas, respeitando nossas diretrizes e consequentemente resultados financeiros e de escala são destacados. Se tornado assim um elo fundamental na execução e no sucesso de nosso trabalho.",
             name: "Marcos André",
             position: "CEO"
         },
-        2: {
+        3: {
             logo: "/assets/images/voteapp-logo.svg",
             text: "A Horizon Studio foi essencial para transformar o VoteApp em uma plataforma moderna, segura e de fácil utilização. Desde o branding até o desenvolvimento do sistema de votação, o time demonstrou total comprometimento e excelência técnica. O sistema ficou incrível, intuitivo, elegante e totalmente alinhado com a proposta do projeto. A equipe da Horizon entendeu exatamente o que queríamos e entregou muito mais do que esperávamos. Hoje o VoteApp transmite credibilidade e inovação, graças a um trabalho impecável do início ao fim.",
             name: "Gerianderson Oliveira",
