@@ -7,17 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
         3: "/assets/images/voteapp-logo.svg"
     }
 
-    // Apenas substitui o texto pelas imagens
     const feedbackOptions = document.querySelectorAll('.feedback-options .option');
 
     feedbackOptions.forEach(option => {
         const feedbackId = option.getAttribute('data-feedback');
         const logoPath = dataLogos[feedbackId];
 
-        // Limpa o conteúdo atual (remove o span com texto)
         option.innerHTML = '';
 
-        // Cria e adiciona a imagem
         const img = document.createElement('img');
         img.src = logoPath;
         img.alt = `Logo ${feedbackId}`;
