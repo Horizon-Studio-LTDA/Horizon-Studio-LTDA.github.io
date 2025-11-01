@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const data = {
         logo: "/assets/images/guide_me-logo.svg",
-        text: "Trabalhar com a Horizon Studio foi uma experiência excelente do início ao fim. O time conseguiu traduzir perfeitamente a essência do nosso negócio e transformar nossa ideia em um negócio moderno e consolidado. O cuidado em cada etapa, desde o branding até o design do nosso sistema, foi notável. O resultado final superou nossas expectativas, a empresa ganhou uma Marca sólida e uma presença digital forte, assim como uma interface funcional, intuitiva e visualmente impecável. Com certeza, recomendamos a Horizon Studio para qualquer empresa que queira elevar o nível do seu projeto.",
+        text: "Trabalhar com a Horizon Studio foi uma experiência excelente do início ao fim. O time conseguiu traduzir perfeitamente a essência da nossa empresa e transformar nossa ideia em um negócio moderno e consolidado. O cuidado em cada etapa, desde o branding até o design do nosso sistema, foi notável. O resultado final superou nossas expectativas, a empresa ganhou uma Marca sólida e uma presença digital forte, assim como uma interface funcional, intuitiva e visualmente impecável. Com certeza, recomendamos a Horizon para qualquer empresa que queira elevar o nível do seu projeto.",
         name: "Heverton Bezerra",
         position: "Sócio-Fundador"
     }
@@ -94,13 +94,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const feedbackData = {
         1: {
             logo: "/assets/images/guide_me-logo.svg",
-            text: "Trabalhar com a Horizon Studio foi uma experiência excelente do início ao fim. O time conseguiu traduzir perfeitamente a essência do nosso negócio e transformar nossa ideia em um negócio moderno e consolidado. O cuidado em cada etapa, desde o branding até o design do nosso sistema, foi notável. O resultado final superou nossas expectativas, a empresa ganhou uma Marca sólida e uma presença digital forte, assim como uma interface funcional, intuitiva e visualmente impecável. Com certeza, recomendamos a Horizon Studio para qualquer empresa que queira elevar o nível do seu projeto.",
+            text: "Trabalhar com a Horizon Studio foi uma experiência excelente do início ao fim. O time conseguiu traduzir perfeitamente a essência da nossa empresa e transformar nossa ideia em um negócio moderno e consolidado. O cuidado em cada etapa, desde o branding até o design do nosso sistema, foi notável. O resultado final superou nossas expectativas, a empresa ganhou uma Marca sólida e uma presença digital forte, assim como uma interface funcional, intuitiva e visualmente impecável. Com certeza, recomendamos a Horizon para qualquer empresa que queira elevar o nível do seu projeto.",
             name: "Heverton Bezerra",
             position: "Sócio-Fundador"
         },
         2: {
             logo: "/assets/images/preceasy-logo.svg",
-            text: "Desde o primeiro momento, percebi que Horizon seria a parceira ideal para o projeto, a equipe conseguiu captar de maneira integral todos os pontos para o desenvolvimento dessa solução, demonstrando uma disponibilidade e dedicação com entregas das demandas, buscaram entender de fato sobre nossos clientes, trazendo aplicações humanizadas, respeitando nossas diretrizes e consequentemente resultados financeiros e de escala são destacados. Se tornado assim um elo fundamental na execução e no sucesso de nosso trabalho.",
+            text: "Desde o primeiro momento, percebi que Horizon seria a parceira ideal para o projeto, a equipe conseguiu captar de maneira integral todos os pontos para o desenvolvimento dessa solução, demonstrando uma disponibilidade e dedicação com entrega das demandas. Buscaram entender de fato sobre nossos clientes, trazendo aplicações humanizadas, respeitando nossas diretrizes e consequentemente resultados financeiros e escaláveis. Se tornando assim, um elo fundamental na execução e no sucesso de nosso trabalho.",
             name: "Marcos André",
             position: "CEO"
         },
