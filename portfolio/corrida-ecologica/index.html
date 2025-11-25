@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Open Graph Meta Tags -->
+		<meta
+			property="og:title"
+			content="Corrida Ecológica"
+		/>
+		<meta
+			property="og:description"
+			content="Corrida Ecológica é um jogo educativo desenvolvido para conscientizar crianças sobre a importância da preservação da Caatinga e práticas de reciclagem. O jogo faz parte do projeto 'Jogos Educativos para a consolidação das aprendizagens: Jogo da Coleta Seletiva'."
+		/>
+		<meta
+			property="og:image"
+			content="https://seusite.com/metadata/og.png"
+		/>
+		<meta property="og:url" content="https://seusite.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Corrida Ecológica" />
+
+		<!-- Meta tags adicionais recomendadas -->
+		<meta property="og:locale" content="pt_BR" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="600" />
+		<meta
+			property="og:image:alt"
+			content="/metadata/og.png"
+		/>
+
+		<title>Corrida Ecológica - Salve a Natureza!</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="game-container">
+			<!-- Tela de Início -->
+			<div id="start-screen" class="screen active">
+				<div class="title-container">
+					<img src="/images/logo.png" style="height: 100px" />
+					<h1>Corrida Ecológica</h1>
+					<p>Ajude Eduardo, o Tatu, a salvar a Caatinga!</p>
+				</div>
+				<div class="menu-buttons">
+					<button id="start-btn" class="btn primary">
+						Começar Jogo
+					</button>
+					<br />
+					<br />
+					<button id="instructions-btn" class="btn secondary">
+						Como Jogar
+					</button>
+					<br />
+					<br />
+					<button id="credits-btn" class="btn secondary">
+						Realização
+					</button>
+                    
+                    <div class="volume-controls">
+    <label for="music-volume">Volume da Música:</label>
+    <input type="range" id="music-volume" min="0" max="100" value="40">
+</div>
+				</div>
+			</div>
+
+			<!-- Tela de Instruções -->
+			<div id="instructions-screen" class="screen">
+				<h2>Como Jogar</h2>
+				<div class="instructions-content">
+					<div class="instruction">
+						<span
+							class="key"
+							style="
+								font-size: 12px;
+								text-align: center;
+								width: 80px;
+							"
+							>Barra de<br />Espaço</span
+						>
+						<p>Pular sobre as queimadas</p>
+					</div>
+					<div class="instruction">
+						<span class="key">W</span>
+						<p>Pular (alternativo)</p>
+					</div>
+					<div class="instruction">
+						<span class="key">↑</span>
+						<p>Pular (alternativo)</p>
+					</div>
+					<div class="instruction">
+						<span class="item"
+							><img src="/images/paper.png"
+						/></span>
+						<p>Coletar papel amassado</p>
+					</div>
+					<div class="instruction">
+						<span class="item"><img src="/images/can.png" /></span>
+						<p>Coletar latinha</p>
+					</div>
+					<div class="instruction">
+						<span class="item"
+							><img src="/images/bottle.png"
+						/></span>
+						<p>Coletar garrafa de água</p>
+					</div>
+					<div class="instruction">
+						<span class="danger">🔥</span>
+						<p>Evitar as queimadas - 3 vidas</p>
+					</div>
+					<div class="instruction">
+						<span class="icon">⏱️</span>
+						<p>Velocidade aumenta com o tempo</p>
+					</div>
+				</div>
+				<button id="back-btn" class="btn primary">
+					Voltar ao Menu
+				</button>
+			</div>
+
+			<!-- Tela de Realização -->
+			<div id="credits-screen" class="screen">
+				<h2>Realização</h2>
+				<div class="credits-content">
+					<div class="credit-section">
+						<h3>Idealização</h3>
+						<p>Maria Hosana Andrade de Sousa</p>
+					</div>
+					<div class="credit-section">
+						<h3>Desenvolvimento</h3>
+						<p>Horizon Studio LTDA.</p>
+					</div>
+					<div class="credit-section">
+						<h3>Sobre o Projeto</h3>
+						<p>
+							Corrida Ecológica é um jogo educativo desenvolvido
+							para conscientizar crianças sobre a importância da
+							preservação da Caatinga e práticas de reciclagem. O
+							jogo faz parte do projeto "Jogos Educativos para a consolidação das aprendizagens: Jogo da Coleta Seletiva".
+						</p>
+					</div>
+					<div class="credit-section">
+						<h3>Objetivos Educacionais</h3>
+						<ul>
+							<li>Sensibilizar os alunos sobre os diferentes tipos de resídios e sua classificação através da atividade coletiva.</li>
+							<li>Promover a reciclagem de materiais.</li>
+							<li>Demonstrar efeitos do desacrte inadequado em diferentes biomas brasileiros.</li>
+							<li>Estimular a adoção de práticas sustentáveis no cotidiano escolar e familiar.</li>
+						</ul>
+					</div>
+				</div>
+				<button id="credits-back-btn" class="btn primary">
+					Voltar ao Menu
+				</button>
+			</div>
+
+			<!-- Jogo -->
+			<div id="game-screen" class="screen">
+				<canvas id="game-canvas"></canvas>
+				<div id="hud">
+					<div class="hud-item">
+						<div class="hud-icon">
+							<img src="/images/heart.png" />
+						</div>
+						<div class="hud-value" id="lives">3</div>
+					</div>
+					<div class="hud-item">
+						<div class="hud-icon">
+							<img src="/images/timer.png" />
+						</div>
+						<div class="hud-value" id="timer">0</div>
+					</div>
+					<div class="hud-item">
+						<div class="hud-icon">
+							<img src="/images/recycle.png" />
+						</div>
+						<div class="hud-value" id="score">0</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Tela de Fim de Jogo -->
+			<div id="gameover-screen" class="screen">
+				<h2>Missão Concluída!</h2>
+				<div id="final-stats">
+					<p>
+						Tempo de jogo: <span id="final-time">0</span> segundos
+					</p>
+					<p>
+						Pontuação total: <span id="final-score">0</span> pontos
+					</p>
+					<p>
+						Itens reciclados: <span id="final-items">0</span> itens
+					</p>
+					<p class="eco-message">A natureza agradece sua ajuda! 🌱</p>
+				</div>
+				<button id="restart-btn" class="btn primary">
+					Jogar Novamente
+				</button>
+			</div>
+		</div>
+
+		<script src="js/game.js"></script>
+	</body>
+</html>
