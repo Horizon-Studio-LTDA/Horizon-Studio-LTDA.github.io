@@ -640,12 +640,20 @@ footer {
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	color: #cbd5e0;
 	font-size: 0.9rem;
+	display: flex;
+	justify-content: space-between;
 }
 /* ===== RESPONSIVE STYLES ===== */
 @media (max-width: 768px) {
     .feedback-logo {
         max-width: 120px;
     }
+		.footer-bottom {
+			flex-direction: column;
+			gap: 16px;
+		}
+
+		
 }
 /* Tablets e dispositivos médios */
 @media (max-width: 1024px) {
@@ -688,8 +696,14 @@ footer {
     }
 }
 
+@media (max-width: 1200px) {
+		header {
+			padding: 10px 60px;
+		}
+}
+
 /* Tablets pequenos */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .hamburger {
         display: flex;
     }
